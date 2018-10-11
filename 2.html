@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>测试用</title>
+    <link href="d3/slim.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
+    <link rel="stylesheet" href="d3/build/build.css">
+    <link rel="stylesheet" href="d3/index.css">
+
+  </head>
+  <body>
+    
+
+
+    <div id="main">
+      <h1>Treed</h1>
+      <h3>Powerful Tree Editor</h3>
+      <ul class="features">
+        <li>VIM Inspired Keyboard Navigation</li>
+        <li>Extensible and Configurable</li>
+        <li>Unlimited Undo/Redo</li>
+        <!--li>Drag and Drop</li-->
+      </ul>
+
+      <table id="bindings">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Bindings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Navigation</td><td class="binding">arrow keys, hjkl</td></tr>
+          <tr><td>Indent/Dedent</td><td class="binding">tab, shift tab</td></tr>
+          <tr><td>Collapse/Expand</td><td class="binding">alt + left/right<br>alt + h/l<br>z (toggle)</td></tr>
+          <tr><td>Undo/Redo</td><td class="binding">ctrl + z, ctrl + shift + z, u, R</td></tr>
+          <tr><td>Move Node</td><td class="binding">ctrl + alt + arrow / hjkl</td></tr>
+          <tr><td>Edit mode</td><td class="binding">return, f2, a, A, i, I</td></tr>
+          <tr><td>Normal Mode</td><td class="binding">escape</td></tr>
+          <tr><td>Toggle Done</td><td class="binding">ctrl + return</td></tr>
+          <tr><td>New Node</td><td class="binding">o, O (before)<br>return (in insert mode)</td></tr>
+          <tr><td>Cut/Copy/Paste</td><td class="binding">ctrl + x / delete, ctrl + c, ctrl + v</td></tr>
+          <tr><td>修改Url</td><td class="binding">alt + m</td></tr>
+        </tbody>
+      </table>
+
+      <div id="example">
+        <div id="editme"></div>
+        <div id="d3view"></div>
+      </div>
+    </div>
+     <button id = "Click_update">上传数据</button>
+    <script src="d3/jquery-3.3.1.min.js"></script>
+    <script src="d3/d3.v3.min.js"></script>
+    <script src="d3/demo-bundle.js"></script>
+    <script src="d3/marked.js"></script>
+
+    <!-- <script src="d3/demo-data.js"></script> -->
+    <script src="d3/flare-data.js"></script>
+    <script src="d3/setup.js"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+    Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','d3/analytics.js','ga');
+
+    ga('create', 'UA-7002862-5', 'jaredly.github.io');
+    ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+
